@@ -1,6 +1,6 @@
 {
   "name": "@nexuscomputing/vuepress-classroom",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "vuepress components for classroom setting",
   "main": "index.js",
   "repository": "git@github.com:nexuscomputing/vuepress-classroom.git",
