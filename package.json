@@ -1,0 +1,15 @@
+{
+  "name": "@nexuscomputing/vuepress-classroom",
+  "version": "1.0.0",
+  "description": "vuepress components for classroom setting",
+  "main": "index.js",
+  "repository": "git@github.com:nexuscomputing/vuepress-classroom.git",
+  "author": "nexus-computing",
+  "license": "GPL-3.0-or-later",
+  "private": false,
+  "devDependencies": {
+    "@vuepress/shared-utils": "^1.2.0",
+    "markdown-it-container": "^2.0.0",
+    "vuepress": "^1.2.0"
+  }
+}
