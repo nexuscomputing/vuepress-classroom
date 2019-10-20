@@ -49,6 +49,10 @@ export default {
   },
   computed: {
     correct() {
+      if (!this.enter || !this.answer) {
+        return false;
+      }
+
       return (
         this.entered.toLowerCase().trim() === this.answer.toLowerCase().trim()
       );
@@ -89,7 +93,7 @@ export default {
       }
 
       this.showBubble = false;
-      localStorage[this.id] = this.entered;
+      //  localStorage[this.id] = this.entered;
 
       if (!this.correct) {
         this.wrong = true;
@@ -100,9 +104,12 @@ export default {
   },
   mounted() {
     this.id = this._uid;
-    const v = localStorage[this.id];
+    // const v = localStorage[this.id];
+    const v = null;
     if (v) {
       this.entered = v;
+    } else {
+      this.entered = "";
     }
   }
 };

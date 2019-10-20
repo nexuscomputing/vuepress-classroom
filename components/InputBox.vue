@@ -26,6 +26,9 @@ export default {
   },
   computed: {
     correct() {
+      if (!this.correctAnswer || !this.answer) {
+        return false;
+      }
       return (
         this.answer.toLowerCase().trim() ===
         this.correctAnswer.toLowerCase().trim()

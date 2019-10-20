@@ -28,6 +28,6 @@ module.exports = {
   enhanceAppFiles: [path.resolve(__dirname, "enhanceAppFile.js")],
   extendMarkdown: md => {
     md.use(...questionContainer("question", "Frage"));
-  },
-  globalUIComponents: ["Question", "InputBox"]
+  }
+  // globalUIComponents: ["Question", "InputBox"]
 };
